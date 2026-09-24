@@ -4,15 +4,6 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div id="menu-container"></div>      
-        <script>
-            fetch('index.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('menu-container').innerHTML = data;
-            })
-            .catch(error => console.error('Lỗi khi tải menu:', error));
-        </script>
   <div class="page">
     <div class="header">
       <img src="hinh/MWSLogo.gif" alt="Maxwell Scientific">
@@ -67,6 +58,5 @@
       <p>Maxwell Scientific<br>205 East Nordheim Drive, Hapton, IL 43129<br>Phone: (800) 555-2191 &nbsp; Fax: (812) 555-2192</p>
     </div>
   </div>
-  <div style="clear: both;"></div>
 </body>
 </html>
