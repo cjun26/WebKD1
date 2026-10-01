@@ -1,0 +1,167 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Online Classifieds Search Form</title>
+
+    <style>
+        #container {
+            width: 500px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #ccffff;
+            border: 2px solid blue;
+        }
+
+        h2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Online Classifieds Search Form</h2>
+        <hr>
+
+        <form>
+            <p><b>1) Search for a classified in the following sections:</b></p>
+
+            <table>
+                <tr>
+                    <td>
+                        <label>
+                            <input type="radio" name="section"
+                                   value="Employment">
+                            Employment
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="radio" name="section"
+                                   value="Personal">
+                            Personal
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>
+                            <input type="radio" name="section"
+                                   value="For Sale" checked>
+                            For Sale
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="radio" name="section"
+                                   value="Miscellaneous">
+                            Miscellaneous
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>
+                            <input type="radio" name="section"
+                                   value="Housing">
+                            Housing
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="radio" name="section"
+                                   value="All of the above">
+                            All of the above
+                        </label>
+                    </td>
+                </tr>
+            </table>
+
+            <p><b>2) Search the following publications:</b></p>
+
+            <table>
+                <tr>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="publication"
+                                   value="Midwest times" checked>
+                            Midwest times
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="publication"
+                                   value="Modern News">
+                            Modern News
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="publication"
+                                   value="Employment Today">
+                            Employment Today
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="publication"
+                                   value="Great Lakes Classifieds" checked>
+                            Great Lakes Classifieds
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="publication"
+                                   value="Middleton Daily">
+                            Middleton Daily
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="publication"
+                                   value="Cashtown Daily News">
+                            Cashtown Daily News
+                        </label>
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                <b>3) From</b>
+                <input type="text" name="fromdate"
+                       placeholder="mm/dd/yy" size="15">
+                to
+                <input type="text" name="todate"
+                       placeholder="mm/dd/yy" size="15">
+            </p>
+
+            <p>
+                <b>4) Enter a few keywords to describe the classified.</b>
+            </p>
+
+            <input type="text" name="keywords" style="width: 90%;">
+
+            <p><b>5) Click one of the options below:</b></p>
+
+            <button type="button" onclick="alert('Search')"
+                    style="border: 0; background: none;">
+                <img src="Bai49/Search.gif" alt="Search">
+            </button>
+
+            <button type="button" onclick="alert('Help')"
+                    style="border: 0; background: none;">
+                <img src="Bai49/Help.gif" alt="Help">
+            </button>
+
+            <button type="reset"
+                    style="border: 0; background: none;">
+                <img src="Bai49/Cancel.gif" alt="Cancel">
+            </button>
+        </form>
+    </div>
+</body>
+</html>
